@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  justify-content: center;
+  align-content: end;
+  width: 100%;
+  height:100px;
+}
+
+.innerDiv{
+  max-width: 100px;
+  height: 100px;
+}

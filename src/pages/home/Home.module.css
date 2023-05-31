@@ -1,0 +1,14 @@
+.contain{
+    position:relative;
+    overflow: auto;
+    background:linear-gradient(to bottom, #d4aaaa, #a6d1d1); ;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 50px;
+}
+
+.extra{
+    height: 100px;
+    width: 100%;
+}

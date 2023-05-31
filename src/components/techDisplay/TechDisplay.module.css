@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.sectionTitle{
+    color: white;
+    text-align: center;
+    font-family:fantasy;
+}
+
+.technologies{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+}

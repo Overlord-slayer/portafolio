@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6000px;
+    color: white;
+}
+
+.organize{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.projectOrganize{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

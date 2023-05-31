@@ -1,0 +1,132 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.card{
+    position: relative;
+    width: 380px;
+    height: 520px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255, 0.5),
+                5px 5px 5px rgba(0,0,0, 0.05),
+                -5px -5px 5px rgba(255,255,255, 0.5);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    position: absolute;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    width: 330px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    background: linear-gradient(45deg, #15a7cf, #16548b);
+}
+
+.container .card .box .content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container .card .box .content h2{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 4em;
+    color: rgba(84, 82, 82, 0.5);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .card:hover .box .content h2{
+    color: rgba(255, 247, 247, 0.5);
+}
+
+.container .card .box .content h3{
+    font-size: 1.8em;
+    margin-top: 50px;
+    color: #000000;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content img{
+    width: 290px;
+    height: 950px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.container .card:hover .box .content img{
+    transition: 0.5s;
+    opacity: 1;
+    transform: scale(1);
+    color: white;
+}
+
+.container .card .box .content p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateY(-100px);
+    opacity: 0;
+
+}
+
+
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p{
+    color: #fff;
+    font-weight: bold;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.container .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background:#03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+    height: 50px;
+    width: 150px;
+    left: 70px;
+}
+
+.container .card:hover .box .content .projectLink{
+    background: #35c6e0;
+}
+
+.container .card:hover .box .content .projectLink:hover{
+    background: linear-gradient(30deg, rgb(155, 53, 53), rgb(220, 168, 168));
+    transform: scale(1.1);
+}
