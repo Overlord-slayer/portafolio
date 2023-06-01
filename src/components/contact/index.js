@@ -1,3 +1,3 @@
-import Contact from './Contacxt'
+import Contact from './Contact'
 
 export default Contact

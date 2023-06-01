@@ -13,51 +13,56 @@ import js from '@iconos/javascriptLogo.png'
 
 import styles from './TechDisplay.module.css'
 
-
 const technologiesData = [
   {
-    image: viteimg
+    name: 'vite',
+    image: viteimg,
   },
   {
-    image: yarn
+    name: 'yarn',
+    image: yarn,
   },
   {
-    image: npm
+    name: 'npm',
+    image: npm,
   },
   {
-    image: reactimg
+    name: 'react',
+    image: reactimg,
   },
   {
-    image: postgres
+    name: 'postgres',
+    image: postgres,
   },
   {
-    image: html
+    name: 'html',
+    image: html,
   },
   {
-    image: css
+    name: 'css',
+    image: css,
   },
   {
-    image: js
-  }
+    name: 'javaScript',
+    image: js,
+  },
 ]
 
-
-export default function TechDisplay(){
+export default function TechDisplay() {
   return (
     <div className={styles.container}>
       <div className={styles.sectionTitle}>
         <h1>Tecnologias</h1>
       </div>
 
-
       <div className={styles.technologies}>
-        {technologiesData.map((technology, index) =>(
+        {technologiesData.map((technology) => (
           <Technology
-            key={index}
+            name={technology.name}
             img={technology.image}
           />
         ))}
-      </div>     
+      </div>
     </div>
   )
 }

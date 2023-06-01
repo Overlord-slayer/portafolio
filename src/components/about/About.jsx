@@ -4,16 +4,16 @@ import foto from '@fotos/samuel.jpg'
 
 import styles from './About.module.css'
 
-export default function About(){
+export default function About() {
   const tiltRef = useRef(null)
 
   useEffect(() => {
     const tiltNode = tiltRef.current
     VanillaTilt.init(tiltNode, {
-      max:20,
-      speed:400
+      max: 20,
+      speed: 400,
     })
-  },[])
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -32,7 +32,7 @@ export default function About(){
           <img src={foto} alt="" />
         </div>
       </div>
-      <div  ref={tiltRef} className={styles.card}>
+      <div ref={tiltRef} className={styles.card}>
         <div className={styles.content}>
           <strong>
             <p>
@@ -40,7 +40,8 @@ export default function About(){
               Samuel es una persona que le encanta el deporte, prefiere disfrutar con las
               amistades aunque no parezca. Le gustan los videojuegos, pero algo que le encanta
               es programar. Quizas no sea el mejor en ello, pero consigue los resultados necesarios
-              <br /><br />
+              <br />
+              <br />
               Actualemnte es estudiante de la Universidad del Valle de Guatemala, cursando su 3era
               año de la carrera Ciencias de la Computación. Considera que ha aprendido mucho, tanto
               por medio de la Universidad, como por medio personal, pues este mundo requiere poner
@@ -48,7 +49,7 @@ export default function About(){
             </p>
           </strong>
         </div>
-      </div>      
+      </div>
     </div>
   )
 }

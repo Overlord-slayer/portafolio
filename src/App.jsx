@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
 import Routing from './routers/Routing'
 
 function App() {
   return (
-    <Routing>
-
-    </Routing>
+    <Routing />
   )
 }
 
